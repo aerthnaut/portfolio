@@ -1,0 +1,14 @@
+@font-face{
+    font-family: 'GTAmerica';
+    src: url("GT-America-Standard-Regular.otf") format("TrueType");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.body{
+    color:white;
+    font-family: 'GTAmerica';
+    font-size: 24;
+    line-height: 26;
+    margin-left: 10;
+}
