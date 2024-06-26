@@ -1,14 +1,227 @@
 @font-face{
     font-family: 'GTAmerica';
-    src: url("GT-America-Standard-Regular.otf") format("TrueType");
+    src: url('GTAmerica.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Panama';
+    src: url('Panama.woff') format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 .body{
-    color:white;
+    color:black;
     font-family: 'GTAmerica';
-    font-size: 24;
-    line-height: 26;
-    margin-left: 10;
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.body h1{
+    color: black;
+    font-family: 'GTAmerica';
+    font-size: 90px;
+    text-align: center;
+}
+
+.body h2{
+    color: black;
+    font-family: 'GTAmerica';
+    font-size: 40px;
+}
+
+figure{
+    display: block;
+    margin: auto;
+}
+
+figcaption{
+    color:rgb(28, 0, 238);
+    font-family: "Panama";
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+.list{
+    color: black;
+    font-family: 'GTAmerica';
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.list:hover{
+    color: rgb(255, 99, 177);
+    font-family: 'GTAmerica';
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+.link{
+    color: black;
+    font-family: 'GTAmerica';
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: rgb(255, 99, 177);
+    font-family: 'GTAmerica';
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    text-shadow: 1px 1px 10px rgb(255, 99, 177);
+}
+
+.collapsible{
+    color: black;
+    font-family: 'GTAmerica';
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.collapsible:hover{
+    color: rgb(255, 99, 177);
+    font-family: 'GTAmerica';
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+}
+
+.content{
+    color: black;
+    font-family: 'GTAmerica';
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0px;
+    margin-right: 15px;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.video_wrapper {
+    position: relative;
+    padding-bottom: 45%;  
+    width: 80%;
+    height: 0;
+    margin: auto;
+    }
+    
+    iframe {
+        position: absolute;
+        display: block;
+        margin: auto;
+        height: 100%;
+        left: 0;
+        top: 0;
+        filter:drop-shadow(black 1px 1px 3px);
+        
+    }
+
+.image_wrapper {
+    width: 100%;
+    margin:auto;
+}
+
+    .image_wrapper img{
+        width: 40%;
+        margin:auto;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        display: block;
+    }
+
+.image_wrapper2 {
+        width: 100%;
+        margin:auto;
+    }
+    
+        .image_wrapper2 img{
+            width: 90%;
+            margin:auto;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            display: block;
+        }
+
+.drop-shadow {
+    filter:drop-shadow(black 1px 1px 3px);
+}
+
+
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+#leftcolumn {
+    height: 100vh;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+#rightcolumn {
+    height: 100vh;
+    flex: 4;
+    overflow-y: scroll;
+}
+
+#container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+#column{
+    flex: 1;
+    overflow-y: none;
+}
+
+#container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    gap: 0px;
+}
+
+#column3{
+    flex: 1;
+    overflow-y: none;
+    align-self: center;
+    margin: auto;
 }
